@@ -8,3 +8,7 @@
         @apply bg-black text-white;
     }
 }
+
+body{
+    font-family: 'Roboto', 'Times New Roman', serif;
+}
