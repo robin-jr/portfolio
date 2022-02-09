@@ -11,4 +11,5 @@
 
 body{
     font-family: 'Roboto', 'Times New Roman', serif;
+    overflow-x: hidden;
 }

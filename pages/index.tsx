@@ -16,21 +16,39 @@ export default function Home() {
     
 
     gsap.to("#projects-pointer", { marginLeft: "1rem", repeat: -1, yoyo: true, ease: "power0" });
+
+    let sections= gsap.utils.toArray('section');
+
+    gsap.to(sections,{
+      xPercent:-100 * (sections.length-1),
+      ease:"none",
+      scrollTrigger:{
+        trigger:".container1",
+        scrub:1,
+        markers:true,
+        snap:1/(sections.length-1),
+        pin:true,
+      }
+    })
+
     var t1 = gsap.timeline({
       scrollTrigger: {
-        trigger: "#section-2", start: "top",
+        trigger: "#section-2",
+         start: "top",
         toggleActions: "resume none none pause", 
-        markers: true, pin: false, scrub: false,
+        markers: true, 
+        // pin: "#line-box", 
+        scrub: 1,
       }
     });
-    t1.to("#box", { bottom: "10em", motionPath: { path: "#path2", align: "#path2", end: 0.35 }, duration: 2 });
+    t1.to("#box", { bottom: "10em", motionPath: { path: "#path2", align: "#path2", end: 0.35 }, duration: 2, delay:1 });
     t1.to("#img-preview", { width: "20em", height: "15em", duration: 2, }, "<");
     t1.to("#project-content", { scaleX: 1, duration: 0.5, transformOrigin: "left" })
-    //exit animation
-    // t1.to("#box", { left: -100, opacity: 0, delay: "3" });
+    // //exit animation
+    // t1.to("#box", { left: -100, opacity: 0 });
   }
   return (
-    <div className="bg-[#141414] min-h-screen text-white w-max h-max">
+    <div className="bg-[#141414] min-h-screen text-white w-max h-max container1">
       <Head>
         <title>Robin J - Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
@@ -88,8 +106,8 @@ export default function Home() {
 
         </section>
 
-        {/* Contact
-        <section className='h-screen w-screen'>
+        {/* Contact */}
+        {/* <section className='h-screen w-screen'>
 
         </section> */}
 
