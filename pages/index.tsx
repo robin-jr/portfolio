@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import MotionPathPlugin from 'gsap/dist/MotionPathPlugin';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import ProjectPanel from '../components/ProjectPanel';
 export default function Home() {
 
   useEffect(() => {
@@ -13,39 +14,31 @@ export default function Home() {
     gsap.registerPlugin(MotionPathPlugin);
     gsap.registerPlugin(ScrollTrigger);
 
-    
-
     gsap.to("#projects-pointer", { marginLeft: "1rem", repeat: -1, yoyo: true, ease: "power0" });
 
-    let sections= gsap.utils.toArray('section');
-
-    gsap.to(sections,{
-      xPercent:-100 * (sections.length-1),
-      ease:"none",
-      scrollTrigger:{
-        trigger:".container1",
-        scrub:1,
-        markers:true,
-        snap:1/(sections.length-1),
-        pin:true,
-      }
-    })
+    var boxes = document.querySelectorAll(".box");
+    var imgPreviews = document.querySelectorAll(".img-preview");
+    var projectContents = document.querySelectorAll(".project-content");
+    var projectsLength = boxes.length;
 
     var t1 = gsap.timeline({
       scrollTrigger: {
-        trigger: "#section-2",
-         start: "top",
-        toggleActions: "resume none none pause", 
-        markers: true, 
-        // pin: "#line-box", 
+        trigger: ".projects-container",
+        toggleActions: "resume none none pause",
+        pin: true,
         scrub: 1,
+        // snap: {snapTo: "labels" ,duration: {min:1,max:3}, delay: 0.1, ease: "power1.inOut"}
       }
     });
-    t1.to("#box", { bottom: "10em", motionPath: { path: "#path2", align: "#path2", end: 0.35 }, duration: 2, delay:1 });
-    t1.to("#img-preview", { width: "20em", height: "15em", duration: 2, }, "<");
-    t1.to("#project-content", { scaleX: 1, duration: 0.5, transformOrigin: "left" })
-    // //exit animation
-    // t1.to("#box", { left: -100, opacity: 0 });
+    for (let i = 0; i < projectsLength; i++) {
+      
+      t1.to(boxes[i], { bottom: "10em", motionPath: { path: "#path2", align: "#path2", end: 0.35 },animationDuration:1});
+      t1.to(imgPreviews[i], { width: "20em", height: "15em" }, "<");
+      t1.addLabel("label"+i);
+      t1.to(projectContents[i], { scaleX: 1, transformOrigin: "left" ,animationDuration:1})
+      t1.to(boxes[i], { left: -100, opacity: 0,animationDuration:1});
+    }
+    t1.to("#path2",{opacity:0});
   }
   return (
     <div className="bg-[#141414] min-h-screen text-white w-max h-max container1">
@@ -53,12 +46,12 @@ export default function Home() {
         <title>Robin J - Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex p-5 justify-end gap-8 mr-8 font-light absolute right-0">
+      <div className="flex p-5 justify-end gap-8 mr-8 font-light fixed right-0">
         <div className="cursor-pointer hover:text-red-400 hover:font-medium group transition-all duration-300 ease-linear">Home <span className='group-hover:scale-100 block origin-left scale-0 h-1 border-white border-1 bg-white transition-all duration-300 ease-linear'></span> </div>
         <div className="cursor-pointer hover:text-red-400 hover:font-medium group transition-all duration-300 ease-linear">Projects <span className='group-hover:scale-100 block origin-left scale-0 h-1 border-white border-1 bg-white transition-all duration-300 ease-linear'></span> </div>
         <div className="cursor-pointer hover:text-red-400 hover:font-medium group transition-all duration-300 ease-linear">Contact <span className='group-hover:scale-100 block origin-left scale-0 h-1 border-white border-1 bg-white transition-all duration-300 ease-linear'></span> </div>
       </div>
-      <div className="flex flex-row">
+      <div className="flex flex-col">
 
         {/* Home */}
         <section className='flex h-screen w-screen pt-20'>
@@ -82,34 +75,19 @@ export default function Home() {
         </section>
 
         {/* Projects */}
-        <section id='section-2' className='h-screen w-screen border-l-2 flex overflow-hidden relative'>
+        <div className='projects-container'>
+          <ProjectPanel></ProjectPanel>
+        </div>
 
-          <svg id="line-box" className='w-full z-10' viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path d="M 100.0,100.0
-           C 60.62,97.12 42.50,75.62 0.0,81.75
-             0.0,81.75 0.0,100.00 0.0,100.00
-             0.0,100.00 100.12,100.12 100.12,100.0"
-              id="path2"
-              fill="black"
-              stroke="#cccccc"
-              stroke-width="1"
-              vector-effect="non-scaling-stroke"></path>
-          </svg>
-
-          <div id='box' className='self-end absolute right-[-20em] bottom-[-2em] flex'>
-            <div id="img-preview" className='border-2 w-20 h-20 bg-gray-500 rounded-md mr-6'></div>
-            <div id='project-content' className="flex-col p-3 scale-x-0">
-              <h3 className='font-normal text-2xl' >Spotify Lyrics Finder</h3>
-              <p className='font-normal text-sm my-3'>Finds the Lyrics of the Spotify Song you are currently listening to.</p>
-            </div>
-          </div>
-
+        {/* Empty Panel */}
+        <section className='h-screen w-screen  flex flex-col justify-center'>
         </section>
 
-        {/* Contact */}
-        {/* <section className='h-screen w-screen'>
+        {/* Contact Section */}
 
-        </section> */}
+        <section className='h-screen w-screen bg-black flex flex-col justify-center'>
+          <h1 className='text-center text-2xl '>Contact Section</h1>
+        </section>
 
       </div>
     </div>
