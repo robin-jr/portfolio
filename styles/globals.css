@@ -13,6 +13,10 @@ body{
     color: #0ff;
 }
 
+.color-tertiary{
+    color: #b0cdf1;
+}
+
 .button {
   padding: 0.5rem 0.75rem;
   transition: all 0.5s linear;
@@ -25,3 +29,15 @@ body{
   color: #fff;
 }
 
+.badge{
+    padding: 0.1rem 0.5rem;
+  transition: all 0.5s linear;
+  border: 1px solid #0ff;
+  color: #0ff;
+  font-family: 'Comic Sans MS';
+  font-size: .9rem;
+}
+.badge:hover{
+  background-color: #0ff4;
+  color: #fff;
+}

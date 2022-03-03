@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import About from '../components/About'
 import Footer from '../components/Footer'
 import Intro from '../components/Intro'
 import Navbar from '../components/Navbar'
@@ -11,10 +12,15 @@ export default function Home() {
         <meta name="description" content="My portfolio website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar/>
+      <Navbar />
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <Intro/>
+      <main>
+        <div className="h-screen flex w-full flex-col items-center justify-center px-20 text-center">
+          <Intro />
+        </div>
+        <div className="h-screen flex w-full flex-col items-center justify-center px-20">
+          <About />
+        </div>
       </main>
 
       <Footer />
