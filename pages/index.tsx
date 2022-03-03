@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Footer from '../components/Footer'
+import Intro from '../components/Intro'
 import Navbar from '../components/Navbar'
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar/>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
+        <Intro/>
       </main>
 
       <Footer />

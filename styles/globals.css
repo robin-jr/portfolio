@@ -12,3 +12,16 @@ body{
 .color-secondary{
     color: #0ff;
 }
+
+.button {
+  padding: 0.5rem 0.75rem;
+  transition: all 0.5s linear;
+  border: 1px solid #0ff;
+  color: #0ff;
+  font-family: 'Comic Sans MS';
+}
+.button:hover {
+  background-color: #0ff4;
+  color: #fff;
+}
+
