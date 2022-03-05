@@ -3,6 +3,7 @@ import About from '../components/About'
 import Footer from '../components/Footer'
 import Intro from '../components/Intro'
 import Navbar from '../components/Navbar'
+import Projects from '../components/Projects'
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
         <title>Robin J</title>
         <meta name="description" content="My portfolio website" />
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet" />
       </Head>
       <Navbar />
 
@@ -20,6 +23,9 @@ export default function Home() {
         </div>
         <div className="h-screen flex w-full flex-col items-center justify-center px-20">
           <About />
+        </div>
+        <div className="min-h-screen flex w-full flex-col items-center justify-center px-20">
+          <Projects />
         </div>
       </main>
 
