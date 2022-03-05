@@ -2,19 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: #000;
-    color: #fff;
+body {
+  background-color: #000;
+  color: #fff;
 }
-.font-comic{
-    font-family: 'Comic Sans MS';
+.font-comic {
+  font-family: 'Comic Sans MS';
 }
-.color-secondary{
-    color: #0ff;
+.color-secondary {
+  color: #0ff;
 }
 
-.color-tertiary{
-    color: #b0cdf1;
+.color-tertiary {
+  color: #b0cdf1;
 }
 
 .button {
@@ -29,15 +29,30 @@ body{
   color: #fff;
 }
 
-.badge{
-    padding: 0.1rem 0.5rem;
+.badge {
+  padding: 0.1rem 0.5rem;
   transition: all 0.5s linear;
   border: 1px solid #0ff;
   color: #0ff;
   font-family: 'Comic Sans MS';
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
-.badge:hover{
+.badge:hover {
   background-color: #0ff4;
   color: #fff;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(17, 24, 8, 0.5);
+  border-radius: 10em;
 }
