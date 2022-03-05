@@ -14,7 +14,7 @@ function Projects() {
         tags: ["Spotify Api","Firebase"], githubLink: "", link: "", image: "https://picsum.photos/200"
     }]
     return (
-        <div className="w-[80%] mb-20">
+        <div className="w-[80%]">
             <div className="text-3xl color-tertiary">Some things I've built</div>
             <div className={styles.projects}>
                 {projects.map((project, idx) => <Project project={project} />)}
