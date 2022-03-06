@@ -3,6 +3,7 @@ import About from '../components/About'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Intro from '../components/Intro'
+import Lines from '../components/Lines'
 import Navbar from '../components/Navbar'
 import OtherProjects from '../components/OtherProjects'
 import Projects from '../components/Projects'
@@ -20,6 +21,7 @@ export default function Home() {
       <Navbar />
 
       <main>
+        <Lines/>
         <div className="h-screen flex w-full flex-col items-center justify-center px-20 text-center">
           <Intro />
         </div>
