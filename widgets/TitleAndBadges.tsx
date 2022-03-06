@@ -8,16 +8,18 @@ export interface Entry {
     title: string,
     badges: Badge[],
 }
-function TitleAndBadges(props: any) {
-    const { entries } = props;
+function TitleAndBadges() {
+    const entries: Entry[] = [{ title: 'Programming Languages', badges: [{ title: 'Python' }, { title: 'Java' }] },
+    { title: 'Backend Frameworks', badges: [{ title: 'Django' }, { title: 'Nodejs' }] },
+    { title: 'Frontend Frameworks', badges: [{ title: 'Reactjs' }, { title: 'Nextjs' }] }]
     return (
         <div className="flex flex-col">
             {entries.map((entry: Entry, index: number) =>
-                <div className="flex my-3">
-                    <div className="mr-5">{entry.title} </div>
+                <div className="flex" style={{marginBottom:"0.75rem"}}  key={entry.title}>
+                    <div className="" style={{marginRight:'1rem'}}>{entry.title}: </div>
                     {entry.badges.map((badge: Badge, index: number) =>
                         <>
-                            <button className="badge mr-4">{badge.title}</button>
+                            <button key={badge.title} className="badge">{badge.title}</button>
                         </>
                     )}
                 </div>

@@ -1,19 +1,21 @@
 import React from 'react'
+import Timeline from '../widgets/Timeline'
 import TitleAndBadges, { Entry } from '../widgets/TitleAndBadges'
 
 function About() {
-    const entries: Entry[] = [{ title: 'Programming Languages', badges: [{ title: 'Python' }, { title: 'Java' }] },
-    { title: 'Backend Frameworks', badges: [{ title: 'Django' }, { title: 'Nodejs' }] },
-    { title: 'Frontend Frameworks', badges: [{ title: 'Reactjs' }, { title: 'Nextjs' }] }]
+    
     return (
-        <div className="flex flex-col">
-            <div className="text-5xl color-tertiary my-3">About Me</div>
-            <div className="font-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, commodi adipisci nostrum quibusdam
-                reiciendis consequatur sapiente recusandae quis iste itaque voluptatum nesciunt incidunt, impedit ratione sunt eum quisquam
-                quam accusamus porro cumque doloremque vitae. A deleniti vero non nulla quia dicta iste maiores incidunt error dolores tempore,
-                ex, eius porro quam qui, inventore voluptatum.</div>
-            <div className="text-3xl color-tertiary my-3 mt-5">Things I Know</div>
-            <TitleAndBadges entries={entries} />
+        <div className="flex w-[80%]">
+            <div className="flex flex-col flex-1 mr-10">
+                <img src="https://www.picsum.photos/1080/1920" className="h-[40em] w-[30em] mb-10"></img>
+                <div className="text-lg text-center">Friendly neighbourhood<br />Programmer 👋</div>
+            </div>
+            <div className="flex flex-col flex-1">
+                <div className="text-3xl color-tertiary mb-4">Things I Know</div>
+                <TitleAndBadges/>
+                <div className="text-3xl color-tertiary mb-4 mt-10">My Journey</div>
+                <Timeline/>
+            </div>
         </div>
     )
 }

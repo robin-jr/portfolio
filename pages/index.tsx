@@ -22,10 +22,10 @@ export default function Home() {
         <div className="h-screen flex w-full flex-col items-center justify-center px-20 text-center">
           <Intro />
         </div>
-        <div className="h-screen flex w-full flex-col items-center justify-center px-20">
+        <div className="min-h-screen flex w-full flex-col items-center justify-center px-20">
           <About />
         </div>
-        <div className="min-h-screen flex w-full flex-col items-center justify-center px-20">
+        <div className="min-h-screen flex w-full flex-col items-center justify-center px-20 py-20">
           <Projects />
         </div>
         <div className="min-h-screen flex w-full flex-col items-center justify-center px-20">

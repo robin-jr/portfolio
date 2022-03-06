@@ -1,0 +1,45 @@
+.timelineEvent {
+  display: flex;
+  gap: 0.75rem;
+
+  :global .time {
+    max-width: 3rem;
+    min-width: 3.5rem;
+    text-align: right;
+    font-style: italic;
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+    margin-top: 1.5rem /* 24px */;
+    margin-right: 0.5rem /* 8px */;
+  }
+  :global .line {
+    margin-top: 0.75rem /* 12px */;
+    height: 100%;
+    width: 0.15rem;
+    background-color: #fff;
+    position: relative;
+    div {
+      position: absolute;
+      left: -0.4rem;
+      margin-top: 0.75rem /* 12px */;
+      background-color: #000;
+      border: 3px solid #fff;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 9999px;
+    }
+  }
+  :global .content {
+    margin-left: 1.25rem /* 20px */;
+    position: relative;
+    margin-top: 1.25rem /* 20px */;
+    max-width: 20rem;
+    min-width: 15rem;
+    .title {
+      font-weight: bold;
+    }
+    .description {
+      font-weight: 300;
+    }
+  }
+}
