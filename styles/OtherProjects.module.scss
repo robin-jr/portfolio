@@ -1,0 +1,53 @@
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: #202020;
+  }
+  100% {
+    background-color: #303030;
+  }
+}
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.project {
+  background-color: #202020;
+  padding: 1.2rem;
+  height: 9em;
+  position: relative;
+
+  :global .title {
+    font-weight: bold;
+  }
+
+  :global .description {
+    font-weight: 300;
+    margin-top: 0.5rem;
+  }
+
+  :global .github-link {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+
+  :global .tags {
+    display: flex;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    font-family: 'Comic Sans MS';
+    font-style: italic;
+    div {
+      margin-left: 1rem;
+      color: #b0cdf1;
+    }
+  }
+}
+
+.project:hover{
+    background-color: #303030;
+  animation: changeBackgroundColor 1s ease-in-out 0s infinite alternate;
+}
