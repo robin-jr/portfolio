@@ -20,9 +20,8 @@
     }
     a:hover {
       transform: translate(0, -0.4rem);
-      color: #0ff;
-      filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
-        brightness(118%) contrast(119%);
+      filter: brightness(0) saturate(100%) invert(79%) sepia(96%) saturate(468%)
+        hue-rotate(103deg) brightness(102%) contrast(102%);
     }
   }
 }
