@@ -33,7 +33,7 @@
   right: 3.5rem /* 56px */;
   bottom: 0px;
 
-  div {
+  a {
     transform: rotate(270deg);
     position: absolute;
     top: -8rem /* -128px */;
@@ -41,7 +41,7 @@
     transition: all 0.2s linear;
     cursor: pointer;
   }
-  div:hover {
+  a:hover {
     top: -8.5rem;
     color: #0ff;
   }

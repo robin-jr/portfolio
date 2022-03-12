@@ -1,0 +1,22 @@
+.navbar {
+  position: fixed;
+  padding-right: 2.5rem /* 40px */;
+  gap: 1.25rem /* 20px */;
+  font-weight: 300;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.25rem /* 20px */;
+  line-height: 1.75rem /* 28px */;
+  padding: 1.25rem /* 20px */;
+  --tw-bg-opacity: 0.8;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  width: 100%;
+
+  :global div {
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  :global div:hover {
+    color: #0fff;
+  }
+}

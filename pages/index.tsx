@@ -10,7 +10,7 @@ import Projects from '../components/Projects'
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col pb-2">
+    <div id="body" className="flex min-h-screen flex-col pb-2">
       <Head>
         <title>Robin J</title>
         <meta name="description" content="My portfolio website" />
@@ -22,19 +22,19 @@ export default function Home() {
 
       <main>
         <Lines/>
-        <div className="h-screen flex w-full flex-col items-center justify-center px-20 text-center">
+        <div id="home-me" className="h-screen flex w-full flex-col items-center justify-center px-20 text-center">
           <Intro />
         </div>
-        <div className="min-h-screen flex w-full flex-col items-center justify-center px-20">
+        <div id="about-me" className="min-h-screen flex w-full flex-col items-center justify-center px-20">
           <About />
         </div>
-        <div className="min-h-screen flex w-full flex-col items-center justify-center px-20 py-20">
+        <div id="projects" className="min-h-screen flex w-full flex-col items-center justify-center px-20 py-20">
           <Projects />
         </div>
-        <div className="min-h-fit flex w-full flex-col items-center justify-center px-20 py-20">
+        <div id="other-projects" className="min-h-fit flex w-full flex-col items-center justify-center px-20 py-20">
           <OtherProjects />
         </div>
-        <div className="min-h-screen flex w-full flex-col items-center justify-center px-20">
+        <div id="contact-me" className="min-h-screen flex w-full flex-col items-center justify-center px-20">
           <Contact />
         </div>
       </main>

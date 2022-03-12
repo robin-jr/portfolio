@@ -12,9 +12,9 @@ function Lines() {
                 </div>
             </div>
             <div className={styles.rightLine}>
-                <div>
+                <a href="mailto:robinjeyasingh@outlook.com">
                     robinjeyasingh@outlook.com
-                </div>
+                </a>
             </div>
         </>
     )
