@@ -14,13 +14,15 @@
     top: -10em;
     background-color: black;
     gap: 1.5rem;
-    div {
+    a {
       cursor: pointer;
       transition: all 0.2s linear;
     }
-    div:hover {
+    a:hover {
       transform: translate(0, -0.4rem);
       color: #0ff;
+      filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
+        brightness(118%) contrast(119%);
     }
   }
 }
