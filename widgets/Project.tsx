@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "../styles/Project.module.scss";
+import Image from 'next/image'
 
 export interface ProjectInterface {
     title: string,
@@ -19,11 +20,12 @@ function Project(props: any) {
                 <div className="text-lg font-medium">{project.title}</div>
                 <div className="description">{project.description}</div>
                 <div className="links">
-                    <div className=""><span className="material-icons">&#xe867;</span></div>
-                    <div className=""><span className="material-icons">&#xf0ec;</span></div>
+                    {project.githubLink && <a href={project.githubLink} target="_blank">
+                        <Image className="icon" color="red" src="/github.svg" height={26} width={26} /></a>}
+                    {project.link && <a href={project.link} target="_blank"><span className="material-icons">&#xe89e;</span></a>}
                 </div>
                 <div className="tags">
-                    {project.tags.map((tag:string,idx:number) =><div>{tag}</div>)}
+                    {project.tags.map((tag: string, idx: number) => <div>{tag}</div>)}
                 </div>
             </div>
             <div className="picture">

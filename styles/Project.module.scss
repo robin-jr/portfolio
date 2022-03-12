@@ -24,8 +24,9 @@
     }
     :global .links {
       display: flex;
+      align-items: center;
       margin-top: 1rem;
-      div {
+      a {
         margin-right: 1.5rem;
       }
     }
@@ -80,7 +81,7 @@
     }
     :global .links {
       margin-left: 0.5rem;
-      div {
+      a {
         margin-left: 1.5rem;
         margin-right: 0;
       }

@@ -9,9 +9,11 @@ export interface Entry {
     badges: Badge[],
 }
 function TitleAndBadges() {
-    const entries: Entry[] = [{ title: 'Programming Languages', badges: [{ title: 'Python' }, { title: 'Java' }] },
-    { title: 'Backend Frameworks', badges: [{ title: 'Django' }, { title: 'Nodejs' }] },
-    { title: 'Frontend Frameworks', badges: [{ title: 'Reactjs' }, { title: 'Nextjs' }] }]
+    const entries: Entry[] = [{ title: 'Programming Languages', badges: [{ title: 'Python' }, { title: 'Java' },{ title:"Js"},{ title:"C"},{ title:"C++"}] },
+    { title: 'Backend', badges: [{ title: 'Django' }, { title: 'Nodejs' },{ title:"Express"},{ title:"GraphQL"},{ title:"NextJs"},{ title:"Rails"}] },
+    { title: 'Databases', badges: [{ title: 'MongoDB' }, { title: 'MySQL' }] },
+    { title: 'Devops', badges: [{ title: 'Docker' }, { title: 'Digital Ocean' },{ title:"Firebase"},{ title:"GraphQL"},{ title:"NextJs"}] },
+    { title: 'Frontend', badges: [{ title: 'Reactjs' }, { title: 'Tailwind' },{ title:"p5js"}] }]
     return (
         <div className="flex flex-col">
             {entries.map((entry: Entry, index: number) =>

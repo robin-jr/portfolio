@@ -4,7 +4,7 @@ import styles from '../styles/Navbar.module.scss'
 function Navbar() {
   const scrollToElement = (element: string) => {
     var section = document.getElementById(element);
-    var topPos = section!.offsetTop;
+    var topPos = section?.offsetTop??0;
     if (element == "home") {
       topPos = 0;
     } else if (element == "about-me") {

@@ -5,14 +5,14 @@ import OtherProject from '../widgets/OtherProject'
 
 function OtherProjects() {
     const projects: ProjectInterface[] = [{
-        title: "Spotify Lyric Finder", description: "Finds the lyrics of the song you are listening to on Spotify.",
-        tags: ["Spotify Api","Firebase"], githubLink: "", link: "", image: "https://picsum.photos/200"
+        title: "Flappy bird", description: "A simple flappy bird game built with p5js.",
+        tags: ["HTML","p5Js"], githubLink: "https://github.com/robin-jr/flapplyBird", link: "", image: ""
     },{
-        title: "Spotify Lyric Finder", description: "Finds the lyrics of the song you are listening to on Spotify.",
-        tags: ["Spotify Api","Firebase"], githubLink: "", link: "", image: "https://picsum.photos/200"
+        title: "Chat application", description: "An android application that allows you to chat with your contacts.",
+        tags: ["Android Native","Authentication", "Firebase"], githubLink: "https://github.com/robin-jr/chat-app", link: "", image: ""
     },{
-        title: "Spotify Lyric Finder", description: "Finds the lyrics of the song you are listening to on Spotify.",
-        tags: ["Spotify Api","Firebase"], githubLink: "", link: "", image: "https://picsum.photos/200"
+        title: "Recruitment App", description: "An android native app where you can post jobs and get responses.",
+        tags: ["Android","Firebase"], githubLink: "https://github.com/robin-jr/recruitment-app", link: "", image: ""
     }]
   return (
        <div className="w-[80%]">
