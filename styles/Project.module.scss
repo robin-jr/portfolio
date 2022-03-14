@@ -43,25 +43,21 @@
   }
   :global .picture {
     position: relative;
+    height:17em;
+    width:30em;
     img {
-      transition: all 0.25s linear;
-      height: 20em;
+      position: absolute;
       width: 30em;
+      transition: all 0.5s linear;
+    }
+    .grey-image:hover{
+      opacity: 0;
     }
   }
   :global .picture:hover {
     img {
-      transform: translate(-0.5em, 0.5em);
+      opacity: 1;
     }
-  }
-  :global .outerBorder {
-    border: 2px solid #0ff;
-    height: 20em;
-    width: 30em;
-    position: absolute;
-    top: 0.5em;
-    right: 0.5em;
-    z-index: -1;
   }
 }
 .project:hover {
@@ -92,13 +88,5 @@
         margin-left: 1rem;
       }
     }
-  }
-  :global .picture:hover {
-    img {
-      transform: translate(0.5em, 0.5em);
-    }
-  }
-  :global .outerBorder {
-    left: 0.5em;
   }
 }

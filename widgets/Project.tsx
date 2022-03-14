@@ -6,6 +6,7 @@ export interface ProjectInterface {
     title: string,
     description: string,
     image: string,
+    greyImage?: string,
     tags: string[],
     githubLink: string,
     link: string,
@@ -30,7 +31,7 @@ function Project(props: any) {
             </div>
             <div className="picture">
                 <img src={project.image} />
-                <div className="outerBorder"></div>
+                <img className="grey-image" src={project.greyImage} />
             </div>
         </div>
     )
