@@ -26,7 +26,7 @@ function Project(props: any) {
                     {project.link && <a href={project.link} target="_blank"><span className="material-icons">&#xe89e;</span></a>}
                 </div>
                 <div className="tags">
-                    {project.tags.map((tag: string, idx: number) => <div>{tag}</div>)}
+                    {project.tags.map((tag: string, idx: number) => <div key={idx}>{tag}</div>)}
                 </div>
             </div>
             <div className="picture">

@@ -19,7 +19,7 @@ function Projects() {
         <div className="w-[80%]">
             <div className="text-3xl color-tertiary">Some things I've built</div>
             <div className={styles.projects}>
-                {projects.map((project, idx) => <Project project={project} />)}
+                {projects.map((project, idx) => <Project key={idx} project={project} />)}
             </div>
         </div>
     )

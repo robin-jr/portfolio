@@ -14,7 +14,7 @@ function OtherProject({ project }: Props) {
             {project.githubLink && <a className="github-link" href={project.githubLink} target="_blank">
                 <Image className="icon" color="red" src="/github.svg" height={26} width={26} /> </a>}
             <div className="tags">
-                {project.tags.map((tag: string, idx: number) => <div>{tag}</div>)}
+                {project.tags.map((tag: string, idx: number) => <div key={idx}>{tag}</div>)}
             </div>
         </div>
     )

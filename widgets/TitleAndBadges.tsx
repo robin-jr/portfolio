@@ -16,13 +16,13 @@ function TitleAndBadges() {
     { title: 'Frontend', badges: [{ title: 'Reactjs' }, { title: 'Tailwind' },{ title:"p5js"}] }]
     return (
         <div className="flex flex-col">
-            {entries.map((entry: Entry, index: number) =>
-                <div className="flex" style={{marginBottom:"0.75rem"}}  key={entry.title}>
+            {entries.map((entry: Entry, idx: number) =>
+                <div className="flex" style={{marginBottom:"0.75rem"}}  key={idx}>
                     <div className="" style={{marginRight:'1rem'}}>{entry.title}: </div>
-                    {entry.badges.map((badge: Badge, index: number) =>
-                        <>
-                            <button key={badge.title} className="badge">{badge.title}</button>
-                        </>
+                    {entry.badges.map((badge: Badge, idx: number) =>
+                        <React.Fragment key={idx}>
+                            <button className="badge">{badge.title}</button>
+                        </React.Fragment>
                     )}
                 </div>
             )}

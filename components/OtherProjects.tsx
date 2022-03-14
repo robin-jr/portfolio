@@ -18,7 +18,7 @@ function OtherProjects() {
        <div className="w-[80%]">
             <div className="text-3xl color-tertiary mb-10">Other Projects</div>
             <div className={styles.projects}>
-                {projects.map((project, idx) => <OtherProject project={project} />)}
+                {projects.map((project, idx) => <OtherProject key={idx} project={project} />)}
             </div>
         </div>
   )
