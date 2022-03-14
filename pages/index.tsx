@@ -10,7 +10,7 @@ import Projects from '../components/Projects'
 
 export default function Home() {
   return (
-    <div id="body" className="flex min-h-screen flex-col pb-2">
+    <div id="body" className="flex min-h-screen flex-col pb-2 p-3">
       <Head>
         <title>Robin J</title>
         <meta name="description" content="My portfolio website" />

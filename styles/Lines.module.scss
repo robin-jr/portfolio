@@ -1,4 +1,9 @@
+$medium:900px;
 .leftLine {
+  display:none;
+  @media screen and (min-width:$medium){
+    display:block
+  }
   width: 0.1rem;
   height: 10rem /* 160px */;
   background-color: white;
@@ -27,6 +32,10 @@
 }
 
 .rightLine {
+  display:none;
+  @media screen and (min-width:$medium){
+    display:block
+  }
   width: 0.1rem;
   height: 10rem /* 160px */;
   background-color: white;
