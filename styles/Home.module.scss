@@ -1,0 +1,33 @@
+.homeBody {
+  display: flex;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  :global #home-me, :global #about-me,:global #projects,:global #other-projects, :global #contact-me{
+      display: flex;
+      padding-left: 5rem;
+      padding-right: 5rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+  }
+  :global #home-me {
+    text-align: center;
+  }
+  :global #about-me {
+
+  }
+  :global #projects {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  :global #other-projects {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  :global #contact-me {
+  }
+}

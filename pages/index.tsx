@@ -7,10 +7,11 @@ import Lines from '../components/Lines'
 import Navbar from '../components/Navbar'
 import OtherProjects from '../components/OtherProjects'
 import Projects from '../components/Projects'
+import styles from "../styles/Home.module.scss"
 
 export default function Home() {
   return (
-    <div id="body" className="flex min-h-screen flex-col pb-2">
+    <div id="body" className={styles.homeBody}>
       <Head>
         <title>Robin J</title>
         <meta name="description" content="My portfolio website" />
@@ -21,20 +22,20 @@ export default function Home() {
       <Navbar />
 
       <main>
-        <Lines/>
-        <div id="home-me" className="h-screen flex w-full flex-col items-center justify-center px-20 text-center">
+        <Lines />
+        <div id="home-me">
           <Intro />
         </div>
-        <div id="about-me" className="min-h-screen flex w-full flex-col items-center justify-center px-20">
+        <div id="about-me">
           <About />
         </div>
-        <div id="projects" className="min-h-screen flex w-full flex-col items-center justify-center px-20 py-20">
+        <div id="projects">
           <Projects />
         </div>
-        <div id="other-projects" className="min-h-fit flex w-full flex-col items-center justify-center px-20 py-20">
+        <div id="other-projects">
           <OtherProjects />
         </div>
-        <div id="contact-me" className="min-h-screen flex w-full flex-col items-center justify-center px-20">
+        <div id="contact-me">
           <Contact />
         </div>
       </main>
