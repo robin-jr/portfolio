@@ -2,6 +2,7 @@
   display: none;
   @media (min-width: 768px) {
     display: flex;
+    align-items: center;
   }
   position: fixed;
   padding-right: 2.5rem /* 40px */;
@@ -21,5 +22,17 @@
   }
   :global div:hover {
     color: #0fff;
+  }
+  :global .resume-btn {
+    padding: 0.25rem 0.75rem;
+    transition: all 0.5s linear;
+    border: 1px solid #0ff;
+    color: #0ff;
+    font-size: 1rem;
+    font-family: 'Comic Sans MS';
+  }
+  :global .resume-btn:hover {
+    background-color: #0ff4;
+    color: #fff;
   }
 }

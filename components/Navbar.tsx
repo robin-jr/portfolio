@@ -18,6 +18,7 @@ function Navbar() {
       <div onClick={() => { scrollToElement("about-me") }} >About</div>
       <div onClick={() => { scrollToElement("projects") }} >Projects</div>
       <div onClick={() => { scrollToElement("contact-me") }} >Contact</div>
+      <a href="/resume.pdf" target="_blank" className="resume-btn">Resume</a>
     </div>
   )
 }
