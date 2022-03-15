@@ -1,6 +1,9 @@
 $medium: 900px;
 .intro {
   :global .one {
+    @media screen and (max-width: $medium) {
+      font-size: 0.8rem;
+    }
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
     font-family: 'Comic Sans MS';
@@ -13,12 +16,14 @@ $medium: 900px;
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
     line-height: 1;
+    font-size: 2rem;
     font-weight: 500;
   }
   :global .three {
     @media (min-width: $medium) {
       font-size: 3rem;
     }
+    font-size: 1.2rem;
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
     line-height: 1;
