@@ -1,9 +1,12 @@
 .navbar {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+  }
   position: fixed;
   padding-right: 2.5rem /* 40px */;
   gap: 1.25rem /* 20px */;
   font-weight: 300;
-  display: flex;
   justify-content: flex-end;
   font-size: 1.25rem /* 20px */;
   line-height: 1.75rem /* 28px */;

@@ -1,0 +1,29 @@
+.intro {
+  // margin-top:7rem;
+  :global .one {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-family: 'Comic Sans MS';
+    color: #0ff;
+  }
+  :global .two {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 4.5rem;
+    line-height: 1;
+    font-weight: 500;
+  }
+  :global .three {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 3rem;
+    line-height: 1;
+  }
+  :global .four {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 300;
+  }
+}
