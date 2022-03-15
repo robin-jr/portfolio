@@ -17,8 +17,8 @@ function Project(props: any) {
     return (
         <div className={styles.project}>
             <div className="content">
-                <div className="font-comic text-sm color-secondary">Featured Project</div>
-                <div className="text-lg font-medium">{project.title}</div>
+                <div className="featured-title">Featured Project</div>
+                <div className="project-title">{project.title}</div>
                 <div className="description">{project.description}</div>
                 <div className="links">
                     {project.githubLink && <a href={project.githubLink} target="_blank">

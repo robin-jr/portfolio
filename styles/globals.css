@@ -38,11 +38,17 @@ body {
   font-family: 'Comic Sans MS';
   font-style: italic;
   font-size: 0.85rem;
-  border-radius:0.4rem;
+  border-radius: 0.4rem;
 }
 .badge:hover {
   background-color: #0ff4;
   color: #fff;
+}
+
+.section-title {
+  font-size: 1.875rem /* 30px */;
+  line-height: 2.25rem /* 36px */;
+  color: #b0cdf1;
 }
 
 /* Scrollbar */
@@ -52,7 +58,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(17,24,39,0.5);
+  background: rgba(17, 24, 39, 0.5);
 }
 
 ::-webkit-scrollbar-thumb {

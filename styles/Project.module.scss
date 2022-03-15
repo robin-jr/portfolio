@@ -8,6 +8,11 @@ $medium: 900px;
     background-color: #2229;
   }
 }
+.projectsContainer {
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+}
 .project {
   margin-top: 3rem;
   display: flex;
@@ -21,12 +26,23 @@ $medium: 900px;
     display: flex;
     flex-direction: column;
     position: relative;
-    :global .description {
+    .featured-title {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-family: 'Comic Sans MS';
+      color: #0ff;
+    }
+    .project-title {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      font-weight: 500;
+    }
+    .description {
       border-left: 2px solid #0ff;
       padding-left: 0.5rem;
       margin-top: 1rem;
     }
-    :global .links {
+    .links {
       display: flex;
       align-items: center;
       margin-top: 1rem;
@@ -35,7 +51,7 @@ $medium: 900px;
         margin-right: 1.5rem;
       }
     }
-    :global .tags {
+    .tags {
       display: flex;
       position: absolute;
       bottom: 0;
