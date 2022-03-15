@@ -8,7 +8,7 @@ function Projects() {
         tags: ["Spotify Api", "Firebase"], githubLink: "https://github.com/robin-jr/Spotify-Lyric-Finder/", link: "", image: "/spotify-project.png", greyImage: "/spotify-project-grey.png"
     }, {
         title: "Algo Visualizer", description: "Visualizes various sorting and path finding algorithms.",
-        tags: ["React Js", "DSA"], githubLink: "https://github.com/robin-jr/Algo-Visualizer", link: "", image: "/algo-project.png", greyImage: "/algo-project-grey.png",
+        tags: ["React Js", "DSA"], githubLink: "https://github.com/robin-jr/Algo-Visualizer", link: "https://robins-algo-visualizer.netlify.app/", image: "/algo-project.png", greyImage: "/algo-project-grey.png",
     },]
     return (
         <div className={styles.projectsContainer}>
