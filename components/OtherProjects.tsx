@@ -15,8 +15,8 @@ function OtherProjects() {
         tags: ["Android","Firebase"], githubLink: "https://github.com/robin-jr/recruitment-app", link: "", image: ""
     }]
   return (
-       <div className="md:w-[80%]">
-            <div className="text-3xl color-tertiary mb-10">Other Projects</div>
+       <div className={styles.projectsContainer}>
+            <div className="section-title" style={{marginBottom:"2.5rem"}}>Other Projects</div>
             <div className={styles.projects}>
                 {projects.map((project, idx) => <OtherProject key={idx} project={project} />)}
             </div>
