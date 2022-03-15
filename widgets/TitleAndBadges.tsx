@@ -15,10 +15,10 @@ function TitleAndBadges() {
     { title: 'Devops', badges: [{ title: 'Docker' }, { title: 'Digital Ocean' },{ title:"Firebase"},{ title:"GraphQL"},{ title:"NextJs"}] },
     { title: 'Frontend', badges: [{ title: 'Reactjs' }, { title: 'Tailwind' },{ title:"p5js"}] }]
     return (
-        <div className="flex flex-col">
+        <div style={{display: 'flex', flexDirection:"column"}}>
             {entries.map((entry: Entry, idx: number) =>
-                <div className="flex" style={{marginBottom:"0.75rem"}}  key={idx}>
-                    <div className="" style={{marginRight:'1rem'}}>{entry.title}: </div>
+                <div style={{marginBottom:"0.75rem",display:"flex"}}  key={idx}>
+                    <div style={{marginRight:'1rem'}}>{entry.title}: </div>
                     {entry.badges.map((badge: Badge, idx: number) =>
                         <React.Fragment key={idx}>
                             <button className="badge">{badge.title}</button>
