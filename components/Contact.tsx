@@ -1,11 +1,12 @@
 import React from 'react'
+import styles from "../styles/Contact.module.scss"
 
 function Contact() {
   return (
-    <div className="text-center">
-        <div className="font-comic color-secondary">What's next?</div>
-        <div className="text-5xl mt-2">Get in Touch</div>
-        <a href="mailto:robinjeyasingh@outlook.com" target="_blank" className="button mt-20 inline-block">Say Hello</a>
+    <div className={styles.contactSection}>
+        <div className="what-next">What's next?</div>
+        <div className="big-title">Get in Touch</div>
+        <a href="mailto:robinjeyasingh@outlook.com" target="_blank" className="button">Say Hello</a>
     </div>
   )
 }

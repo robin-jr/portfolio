@@ -1,0 +1,16 @@
+.contactSection {
+  text-align: center;
+  :global what-next {
+    font-family: 'Comic Sans MS';
+    color: #0ff;
+  }
+  :global .big-title {
+    margin-top: 0.5rem;
+    font-size: 3rem;
+    line-height: 1;
+  }
+  a {
+    margin-top: 5rem;
+    display: inline-block;
+  }
+}
