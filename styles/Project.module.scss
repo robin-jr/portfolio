@@ -9,7 +9,7 @@ $medium: 900px;
   }
 }
 .projectsContainer {
-  @media (min-width: 768px) {
+  @media (min-width: $medium) {
     width: 80%;
   }
 }

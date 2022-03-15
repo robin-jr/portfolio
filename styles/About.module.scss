@@ -1,18 +1,21 @@
+$medium: 900px;
 .about {
   justify-content: center;
 
-  @media (min-width: 768px) {
+  @media (max-width: $medium) {
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: 1280px) {
-    display: flex;
     display: flex;
   }
 
   :global .img-container {
     display: flex;
-    margin-right: 2.5rem;
-    display: flex;
+    @media (min-width: 1280px) {
+      margin-right: 2.5rem;
+    }
     flex-direction: column;
     flex: 1 1 0%;
     align-items: center;

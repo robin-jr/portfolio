@@ -17,7 +17,7 @@ function About() {
                 <div className="big-title">Things I Know</div>
                 {/* <TitleAndBadges /> */}
                 <div className="big-title" style={{marginTop:"2rem"}}>My Journey</div>
-                {/* <Timeline /> */}
+                <Timeline />
             </div>
         </div>
     )

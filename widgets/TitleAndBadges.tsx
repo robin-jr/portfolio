@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from '../styles/TitleAndBadges.module.scss'
 
 
 export interface Badge {
