@@ -24,6 +24,10 @@ $medium: 900px;
   :global #projects {
     padding-top: 5rem;
     padding-bottom: 5rem;
+    @media screen  and (max-width: $medium){
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
   }
   :global #other-projects {
     padding-top: 5rem;
