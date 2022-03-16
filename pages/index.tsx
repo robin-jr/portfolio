@@ -15,7 +15,7 @@ export default function Home() {
       <Head>
         <title>Robin J</title>
         <meta name="description" content="My portfolio website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/fav.svg" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet" />
       </Head>
