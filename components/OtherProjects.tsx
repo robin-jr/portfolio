@@ -6,7 +6,7 @@ import OtherProject from '../widgets/OtherProject'
 function OtherProjects() {
     const projects: ProjectInterface[] = [{
         title: "Flappy bird", description: "A simple flappy bird game built with p5js.",
-        tags: ["HTML","p5js"], githubLink: "https://github.com/robin-jr/flapplyBird", link: "", image: ""
+        tags: ["HTML","p5js"], githubLink: "https://github.com/robin-jr/flappyBird", link: "", image: ""
     },{
         title: "Chat application", description: "An android application that allows you to chat with your contacts.",
         tags: ["Android Native","Authentication", "Firebase"], githubLink: "https://github.com/robin-jr/chat-app", link: "", image: ""
