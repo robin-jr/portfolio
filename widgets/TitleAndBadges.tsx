@@ -10,11 +10,11 @@ export interface Entry {
     badges: Badge[],
 }
 function TitleAndBadges() {
-    const entries: Entry[] = [{ title: 'Programming Languages', badges: [{ title: 'Python' }, {title: 'Js'}, { title: 'Golang' }, { title: "Java" }, { title: "C" }, { title: "C++" }, {title: 'SQL'}] },
-    { title: 'Backend', badges: [{ title: 'Django' }, { title: 'Nodejs' }, { title: "Express" }, { title: "GraphQL" }, { title: "NextJs" }, { title: "Rails" }] },
-    { title: 'Databases', badges: [{ title: 'MongoDB' }, { title: 'MySQL' }] },
-    { title: 'Devops', badges: [{ title: 'Docker' }, { title: 'Digital Ocean' }, { title: "Firebase" }, { title: "GraphQL" }, { title: "NextJs" }] },
-    { title: 'Frontend', badges: [{ title: 'Reactjs' }, {title: 'Flutter'}, {title: 'Angular'}, { title: 'Tailwind' }, { title: "p5js" }] }]
+    const entries: Entry[] = [{ title: 'Programming Languages', badges: [{ title: 'Python' }, { title: 'Js' }, { title: 'Golang' }, { title: "Java" }, { title: "C" }, { title: "C++" }, { title: 'SQL' }] },
+    { title: 'Backend', badges: [{ title: 'Django' }, { title: 'Nodejs' }, { title: "Express" }, { title: "GraphQL" }, { title: "NextJs" }, { title: "Rails" }, { title: "Firebase" }] },
+    { title: 'Databases', badges: [{ title: 'MongoDB' }, { title: 'MySQL' }, { title: 'Postgresql' }, { title: 'BigQuery' }, { title: 'Clickhouse' }, { title: 'ElasticSearch' }, { title: 'Firestore' }] },
+    { title: 'Devops', badges: [{ title: 'Docker' }, { title: 'Digital Ocean' }, { title: 'Azure' }, { title: 'GCP' }, { title: 'AWS' }, { title: 'CI/CD' }] },
+    { title: 'Frontend', badges: [{ title: 'Reactjs' }, { title: 'Flutter' }, { title: 'Angular' }, { title: 'Tailwind' }, { title: "p5js" }, { title: 'Unity' }] }]
     return (
         <div className={styles.container}>
             {entries.map((entry: Entry, idx: number) =>
